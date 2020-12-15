@@ -14,14 +14,14 @@ def home(request):
     return render(request, 'python_sample/home.html');
 
 
-_userIdentifier="7503491464";
-_password="Nass#2020";
+_userIdentifier="";
+_password="";
 _grantType = "password";
-_transactionPin = "135758";
+_transactionPin = "";
 _orderId = "263626";
 _amount = "10";
 _languageCode = "en";
-_merchantToken = "Basic TUVSQ0hBTlRfQVBQOk1lcmNoYW50QEFkbWluIzEyMw==";
+_merchantToken = "";
 
 _baseURL = "https://uatgw.nasswallet.com";
 _checkoutPageURL = "https://uatcheckout.nasswallet.com/";
