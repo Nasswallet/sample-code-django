@@ -1,8 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from django.http import JsonResponse
 from django.views.generic import View
-from django.core import serializers
 import json
 import requests
 
@@ -11,6 +9,7 @@ import requests
 
 
 def home(request):
+    
     return render(request, 'python_sample/home.html');
 
 
@@ -27,8 +26,7 @@ _baseURL = "https://uatgw.nasswallet.com";
 _checkoutPageURL = "https://uatcheckout.nasswallet.com/";
 
 
-def login(request):
-    
+def login(request): 
     gatewayURL = '';
 
     if request.is_ajax and request.method == "POST":
@@ -47,6 +45,7 @@ def login(request):
             print("login failed, please check and try again");
 
     return JsonResponse({"url" : gatewayURL})
+
 
 def makeTransaction(access_token):
 
