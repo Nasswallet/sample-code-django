@@ -8,4 +8,4 @@ In order to run the project you need to make sure that you have prepared  your d
 ###### To run the project use the following commands:
 **python manage.py runserver**
 ###### Used library for this sample project:
-**Requests: HTTP for Humans**
+**Requests HTTP Library.**
